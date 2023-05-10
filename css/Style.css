@@ -18,6 +18,54 @@ body{
     box-shadow: 0.2px 0 0 currentcolor;
 }
 
+#songList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #songList{
+    display: none;
+  }
+  #songList li {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  #songList li img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+  }
+  
+  #songList li .songInfo {
+    text-align: left;
+  }
+
+  .songInfo button {
+    /* float: right; */
+    cursor: pointer;
+    margin-left: 80px;
+    /* margin-top: -30%; Ajuste a margem superior conforme necessário */
+  }
+  
+  .redBackground {
+    background-color: red;
+    color: white;
+  }
+  
+  
+  #songList li h2 {
+    margin: 0 20px 0 0;
+    font-size: 24px;
+  }
+  
+  #songList li p {
+    margin: 0px;
+    font-size: 16px;
+  }
+
 
 .myPlaylist a{
     display: inline-block;

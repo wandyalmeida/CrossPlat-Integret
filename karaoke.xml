@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<karaokes>
+  <musics name="International">
+    <song>
+      <id>345</id>
+      <title>Bohemian Rhapsody</title>
+      <artist>Queen</artist>
+      <image>https://m.media-amazon.com/images/M/MV5BMTY3MjU0NDA0OF5BMl5BanBnXkFtZTgwNTc0MTU3OTE@._V1_FMjpg_UX1000_.jpg</image>
+      <duration>6:06</duration>
+    </song>
+    <song>
+      <id>345</id>
+      <title>Bohemian Rhapsody</title>
+      <artist>Queen</artist>
+      <image>https://m.media-amazon.com/images/M/MV5BMTY3MjU0NDA0OF5BMl5BanBnXkFtZTgwNTc0MTU3OTE@._V1_FMjpg_UX1000_.jpg</image>
+      <duration>6:06</duration>
+    </song>
+    <song>
+      <id>345</id>
+      <title>Bohemian Rhapsody</title>
+      <artist>Queen</artist>
+      <image>https://m.media-amazon.com/images/M/MV5BMTY3MjU0NDA0OF5BMl5BanBnXkFtZTgwNTc0MTU3OTE@._V1_FMjpg_UX1000_.jpg</image>
+      <duration>6:06</duration>
+    </song>
+    <song>
+      <id>345</id>
+      <title>Bohemian Rhapsody</title>
+      <artist>Queen</artist>
+      <image>https://m.media-amazon.com/images/M/MV5BMTY3MjU0NDA0OF5BMl5BanBnXkFtZTgwNTc0MTU3OTE@._V1_FMjpg_UX1000_.jpg</image>
+      <duration>6:06</duration>
+    </song>
+  </musics>
+  <musics name="Brazilian">
+    <song>
+      <id>345</id>
+      <title>Bohemian Rhapsody</title>
+      <artist>Queen</artist>
+      <image>img/Ta_ke.png</image>
+      <duration>6:06</duration>
+    </song>
+    <song>
+      <id>345</id>
+      <title>Bohemian Rhapsody</title>
+      <artist>Queen</artist>
+      <image>img/Ta_ke.png</image>
+      <duration>6:06</duration>
+    </song>
+  </musics>
+  <musics>
+    <song>
+      <id>345</id>
+      <title>Bohemian Rhapsody</title>
+      <artist>Queen</artist>
+      <image>img/Ta_ke.png</image>
+      <duration>6:06</duration>
+    </song>
+  </musics>
+ 
+ </karaokes>
