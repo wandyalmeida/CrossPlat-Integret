@@ -6,12 +6,14 @@
     --color2: #f4f4f4;
 }
 
+
 body{
     /* background-color: #8BA1BB; */
     font-family: Arial;
     /* margin: 0; */
 
 }
+
 
 .selected{
     color: #5cdb95;
@@ -53,6 +55,7 @@ body{
   .redBackground {
     background-color: red;
     color: white;
+    border-radius: 10px;
   }
   
   
@@ -154,6 +157,7 @@ ul{
     align-items: center; 
     list-style: none;
     padding: 0;
+    margin-top: 35px;
 }
 
 ul img{
@@ -244,8 +248,10 @@ ul:hover a:hover {
     border-radius: 10px;
     /* box-shadow: 0px 0px 8px 8px rgba(10, 0, 0, 0.6); */
 }
+
+/* class="example"  */
   
-  form.example input[type=text] {
+  form.input-holder input[type=text] {
     padding: 10px;
     font-size: 17px;
     border: 1px solid grey;
@@ -254,7 +260,7 @@ ul:hover a:hover {
     background: #f1f1f1;
   }
   
-  form.example button {
+ form.input-holder button {
     float: left;
     width: 20%;
     padding: 10px;
@@ -266,15 +272,15 @@ ul:hover a:hover {
     cursor: pointer;
   }
   
-  form.example button:hover {
+  form.input-holder button:hover {
     background: #0b7dda;
   }
   
-  form.example::after {
+  form.input-holder::after {
     content: "";
     clear: both;
     display: table;
-  }
+  } 
   
 
 h2 {
@@ -553,6 +559,5 @@ input:focus + label{
         margin-bottom: 75px;
         margin-left: 120px;
 
-    }
-    
+    }    
 }
