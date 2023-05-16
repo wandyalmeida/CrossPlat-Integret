@@ -2,6 +2,13 @@
 
 var electron = require('electron');
 var app = electron.app;
+// var sqlite3 = require('sqlite3').verbose();
+// var db = new sqlite3.Database('musics.db');
+
+// db.run("CREATE TABLE waitList (ID_song INTEGER, title TEXT, artist TEXT, userName TEXT)");
+
+// db.close();
+
 var BrowserWindow = electron.BrowserWindow;
 var mainWindow = null;
 app.disableHardwareAcceleration();
