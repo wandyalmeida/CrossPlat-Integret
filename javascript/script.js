@@ -1,15 +1,8 @@
-var sqlite3 = require('sqlite3').verbose();
-var db = new sqlite3.Database('musics.db');
+var db = openDatabase('musics', '1.0', 'My first data', 2 * 1024 * 1024);
 
-db.run("CREATE TABLE waitList (ID_song INTEGER, title TEXT, artist TEXT, userName TEXT)");
-
-db.close();
-
-// var db = openDatabase('musics', '1.0', 'My first data', 2 * 1024 * 1024);
-
-// db.transaction(function(tx){
-//   tx.executeSql('CREATE TABLE waitList(ID_song INTEGER, title TEXT, artist TEXT, userName TEXT)');
-// });
+db.transaction(function(tx){
+  tx.executeSql('CREATE TABLE waitList(ID_song INTEGER, title TEXT, artist TEXT, userName TEXT)');
+});
 
 const body = document.querySelector('.body');
 const icon = document.querySelector('.icon');
@@ -17,15 +10,6 @@ const icon = document.querySelector('.icon');
 icon.addEventListener('click', () => {
     body.classList.toggle('dark');
 });
-
-// db.transaction(function (tx) {
-//   tx.executeSql('DROP TABLE waitList');
-// });
-
-
-// db.transaction(function (tx) {
-//   tx.executeSql('ALTER TABLE waitList ADD COLUMN ID_song INTEGER');
-// });
 
 // JavaScript
 document.getElementById("navMenu").addEventListener("click", function() {

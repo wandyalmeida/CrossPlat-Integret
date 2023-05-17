@@ -1,19 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
-* {
+ * {
     box-sizing: border-box;
 }
-:root {
+/* :root {
     --color1:#D89584;
-    --color2: #f4f4f4;
-}
-
-
+    --color2: #f4f4f4; 
+}  */
 body{
-    /* background-color: #8BA1BB; */
-    font-family: Arial;
-    /* margin: 0; */
-
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Create the botton to change the mode of the webpage*/
@@ -47,14 +43,29 @@ body{
     transition: background-color 1s,
     transform 1s ease-in;
     box-shadow: 0px 0px 8px 8px rgba(10, 0, 0, 0.6);
-
-
 }
 
 
 .selected{
     color: #5cdb95;
     box-shadow: 0.2px 0 0 currentcolor;
+}
+
+/* Scroll bar */
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background: #00cc99;
+    border-radius: 50px;
+
+}
+
+::-webkit-scrollbar-thumb{
+    background: #2196F3;
+    border-radius: 50px;
 }
 
 #songList {
@@ -155,6 +166,14 @@ body{
     font-weight: bold;
     font-family: "Segoe UI","Arial","Times New Roman";
 }
+
+.coming-soon{
+    text-align: center;
+    margin: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Segoe UI","Arial","Times New Roman";
+}
 #list{
     display: none;
 }
@@ -179,7 +198,7 @@ body{
 .myPlaylist span{
     display: block;
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -197,11 +216,6 @@ ul{
     list-style: none;
     padding: 0;
     margin-top: 35px;
-}
-
-.icons-menu {
-    display: flex;
-    flex-wrap: nowrap;
 }
 
 ul svg{
@@ -625,11 +639,6 @@ input:focus + label{
         padding-left: 0px;
         margin-top: 18px;
     }
-
-    /* .float-right {
-        float: none;
-        left: 50%;
-    } */
     
     img.logo{
         margin-left: 10px;
