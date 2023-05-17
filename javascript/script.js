@@ -57,7 +57,6 @@ document.getElementById("navMenu").addEventListener("click", function() {
 
 
   function addToWaitingList(id, title, artist, userName) {
-    console.log('addToWaitingList chamada com', id, title, artist, userName);
     db.transaction(function(tx){
       tx.executeSql('CREATE TABLE waitList(ID_song INTEGER, title TEXT, artist TEXT, userName TEXT)');
     });
@@ -93,25 +92,19 @@ document.getElementById("navMenu").addEventListener("click", function() {
   }
   
   function removeFromWaitingList(id, userName) {
-    // Encontrar o item da lists de espera com o ID correspondente
-    // console.log("Função removeFromWaitingList chamada com o ID:", id);
+    // Find waitlist item with matching ID
     var table = document.getElementById("waitingList");
     var rows = Array.from(table.getElementsByTagName("tr"));
     for (var i = 0; i < rows.length; i++) {
     if (rows[i].getAttribute("data-id") == id &&  rows[i].getAttribute("data-userName") == userName) {
-      console.log(id);
-      console.log(userName);
-    // Adicionar chamada para função que exclui a música do banco de dados
-    console.log("Função removeFromWaitingList chamada com ID:", id, "e userName:", userName);
-
+    // Add call to function that deletes music from database
     deleteSongFromDatabase(id, userName);
     table.removeChild(rows[i]);
     break;
     }
     }
 
-    // checkIfListIsEmpty();
-    // Mostrar a mensagem de lists vazia se a lists estiver vazia
+    // Show empty lists message if list is empty
     if (table.getElementsByTagName("tr").length === 1) {
     var emptyMessage = document.getElementById("emptyMessage");
     emptyMessage.style.display = "block";
@@ -119,7 +112,7 @@ document.getElementById("navMenu").addEventListener("click", function() {
     listDiv.style.display = "none";
     }
     
-    // Salvar a lists de espera no arquivo XML
+    // Save waitlist in sqlite
     var waitingList = getWaitingListFromPage();
     
    }
@@ -127,11 +120,6 @@ document.getElementById("navMenu").addEventListener("click", function() {
    function deleteSongFromDatabase(id, userName) {
     db.transaction(function (tx) {
     tx.executeSql('DELETE FROM waitList WHERE ID_song = ? AND userName = ?', [id, userName], function(tx, results) {
-    console.log("Chamando deleteSongFromDatabase com ID:", id, "e userName:", userName);
-    }, function(tx, error) {
-      console.log("Chamando deleteSongFromDatabase com ID:", id, "e userName:", userName);
-
-    console.log('Erro ao excluir música: ' + error.message);
     });
     });
     
@@ -204,19 +192,17 @@ function showAlbum(lists) {
 }
 
   
-function showInternacional(lists) {
+function showSongs(lists) {
   resetSongList();
 
   document.getElementById("playlist").style.display = "none";
 	document.getElementById("songList").style.display = "flex";
   
-  // A lists de músicas ainda não foi carregada, vamos carregá-la agora.
-  
-  // Carregar o arquivo XML
+  // Loading XML File
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      // Encontrar todas as músicas internacionais
+      // Find all songs in the selected playlist
       var xmlDoc = this.responseXML;
       var musics = xmlDoc.getElementsByTagName("musics");
       var internationalSongs = null;
@@ -228,10 +214,11 @@ function showInternacional(lists) {
       }
       if (internationalSongs == null) {
         var list = document.getElementById("songList");
-        var p = document.createElement("p");
-        p.innerHTML = "Nenhuma música internacional encontrada.";
-        list.appendChild(p);
-        console.log("Não há músicas internacionais no arquivo XML.");
+        var h1 = document.createElement("h1");
+        h1.className = "coming-soon";
+        h1.innerHTML = "No matching songs found.";
+        list.appendChild(h1);
+        console.log("No matching songs found in the XML file.");
         return;
       }
       
@@ -311,9 +298,10 @@ function searchSongs(searchId, searchBand, searchName) {
 
             if (matchingSongs.length == 0) {
                 var list = document.getElementById("songList");
-                var p = document.createElement("p");
-                p.innerHTML = "No matching songs found.";
-                list.appendChild(p);
+                var h1 = document.createElement("h1");
+                h1.className = "coming-soon";
+                h1.innerHTML = "No matching songs found.";
+                list.appendChild(h1);
                 console.log("No matching songs found in the XML file.");
                 return;
             }
