@@ -194,6 +194,7 @@ function showAlbum(lists) {
   
 function showSongs(lists) {
   resetSongList();
+  console.log(lists);
 
   document.getElementById("playlist").style.display = "none";
 	document.getElementById("songList").style.display = "flex";
@@ -205,14 +206,27 @@ function showSongs(lists) {
       // Find all songs in the selected playlist
       var xmlDoc = this.responseXML;
       var musics = xmlDoc.getElementsByTagName("musics");
-      var internationalSongs = null;
+      var internationalSongs = [];
+
       for (var i = 0; i < musics.length; i++) {
-        if (musics[i].getAttribute("name") == lists) {
-          internationalSongs = musics[i].getElementsByTagName("song");
-          break;
+        if (musics[i].getAttribute("name") === lists) {
+          var songs = musics[i].getElementsByTagName("song");
+          for (var j = 0; j < songs.length; j++) {
+            internationalSongs.push(songs[j]);
+          }
+        }else{
+          var songs = musics[i].getElementsByTagName("song");
+          for (var j = 0; j < songs.length; j++){
+            var genre = songs[j].getElementsByTagName("genre")[0].childNodes[0].nodeValue;
+            if (genre === lists){
+              internationalSongs.push(songs[j]);
+            }
+          }
+          
         }
       }
-      if (internationalSongs == null) {
+      
+      if (internationalSongs.length === 0) {
         var list = document.getElementById("songList");
         var h1 = document.createElement("h1");
         h1.className = "coming-soon";

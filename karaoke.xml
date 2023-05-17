@@ -6,86 +6,78 @@
       <title>Bohemian Rhapsody</title>
       <artist>Queen</artist>
       <image>https://pbs.twimg.com/profile_images/1080450214807298048/QUetVW1e_400x400.jpg</image>
+      <genre>Rock</genre>
     </song>
     <song>
       <id>2249</id>
       <title>Hello</title>
       <artist>Adele</artist>
       <image>https://m.media-amazon.com/images/M/MV5BMTM2NzE1YTEtNTNjZC00MTg5LTkwOTEtNDEwMDI1ODA1YjhkXkEyXkFqcGdeQXVyNjU0ODAyOTY@._V1_.jpg</image>      
+      <genre>Pop</genre>
     </song>
     <song>
       <id>2550</id>
       <title>Help!</title>
       <artist>The Beatles</artist>
       <image>https://i1.sndcdn.com/artworks-Bs16uAKzCRrz8LC0-oP9r1Q-t500x500.jpg</image>
+      <genre>Rock</genre>
     </song>
     <song>
       <id>2548</id>
       <title>Beat it</title>
       <artist>Michael Jackson</artist>
       <image>https://i1.sndcdn.com/artworks-000329038545-d554xk-t500x500.jpg</image>
+      <genre>Pop</genre>
     </song>
     <song>
       <id>2535</id>
       <title>Sweet Dreams</title>
       <artist>Beyoncé</artist>
       <image>https://m.media-amazon.com/images/M/MV5BZjZmM2Q1Y2EtNWNlZi00Mjk2LWI5ZDktMzBhOTAxYjE4YTVkXkEyXkFqcGdeQXVyNjE0ODc0MDc@._V1_.jpg</image>
+      <genre>Pop</genre>
     </song>
     <song>
       <id>2473</id>
       <title>I want in that way</title>
       <artist>Backstreet Boys</artist>
       <image>https://i.scdn.co/image/ab67616d0000b2732d46afec3dab9a723f7d70a5</image>
+      <genre>Pop</genre>
     </song>
     <song>
       <id>2549</id>
       <title>Piece of me</title>
       <artist>Britney Spears</artist>
       <image>https://i1.sndcdn.com/artworks-6S154wEYrNbvnPIW-yHCI7Q-t500x500.jpg</image>
+      <genre>Pop</genre>
     </song>
     <song>
       <id>2189</id>
       <title>Last Friday Night</title>
       <artist>Katy Perry</artist>
       <image>https://m.media-amazon.com/images/M/MV5BYzQ3YjkzNWItZDUxZi00OGNjLTlkOWQtNWY3Y2JhMmRlMWEzXkEyXkFqcGdeQXVyNzg4MTIxNzg@._V1_.jpg</image>
+      <genre>Pop</genre>
     </song>
     <song>
       <id>2552</id>
       <title>Under The Infuence</title>
       <artist>Chris Brown</artist>
       <image>https://i1.sndcdn.com/artworks-r1XTWXD0DXgbWvhL-3L9Skw-t500x500.png</image>
+      <genre>Soul</genre>
     </song>
     <song>
       <id>2553</id>
       <title>Peru</title>
       <artist>Fireboy DML</artist>
       <image>https://i.scdn.co/image/ab67616d0000b2731c4c28299e3b188a72d07ed8</image>
+      <genre>Pop</genre>
     </song>
   </musics>
   <!-- <musics name="Brazilian">
     <song>
-      <id>345</id>
+      <id>2545</id>
       <title>Bohemian Rhapsody</title>
       <artist>Queen</artist>
       <image>img/Ta_ke.png</image>
-      <duration>6:06</duration>
-    </song>
-    <song>
-      <id>345</id>
-      <title>Bohemian Rhapsody</title>
-      <artist>Queen</artist>
-      <image>img/Ta_ke.png</image>
-      <duration>6:06</duration>
-    </song>
-  </musics>
-  <musics>
-    <song>
-      <id>345</id>
-      <title>Bohemian Rhapsody</title>
-      <artist>Queen</artist>
-      <image>img/Ta_ke.png</image>
-      <duration>6:06</duration>
     </song>
   </musics> -->
- 
  </karaokes>
