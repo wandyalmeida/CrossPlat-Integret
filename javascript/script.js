@@ -187,7 +187,7 @@ function showAlbum(lists) {
       }
     }
   };
-  xhttp.open("GET", "karaoke.xml", true);
+  xhttp.open("GET", "/xml/karaoke.xml", true);
   xhttp.send();
 }
 
@@ -259,7 +259,7 @@ function showSongs(lists) {
       }
     }
   };
-  xhttp.open("GET", "karaoke.xml", true);
+  xhttp.open("GET", "/xml/karaoke.xml", true);
   xhttp.send();
 }
 
@@ -342,7 +342,7 @@ function searchSongs(searchId, searchBand, searchName) {
             }
         }
     };
-    xhttp.open("GET", "karaoke.xml", true);
+    xhttp.open("GET", "/xml/karaoke.xml", true);
     xhttp.send();
 }
 

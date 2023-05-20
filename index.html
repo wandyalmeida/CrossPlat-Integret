@@ -11,7 +11,6 @@
         <!-- Load icon library -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- <link rel="stylesheet" href="https://cdn.es.gov.br/fonts/font-awesome/css/font-awesome.min.css"> -->
         <link rel="shortcut icon" type="image/x-icon" href="img/Ta_ke.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -19,20 +18,21 @@
     <body class="body">          
         <nav>
             <img class="logo" src="img/Ta_ke.png"  alt="It's the logo of the company">
-            <!-- future menu.. -->
+          
             <div id="navMenu" class="float-right">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
 
-            <ul id="menuItems">
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul id="menuItems" class="btn-group bnt-new">
+                <li><a class="btn btn-primary" href="#playlist"onclick="showTab('playlist')">Playlist</a></li>
+                <li><a class="btn btn-primary" href="#album" onclick="showTab('album')">Playlist By Band</a></li>
+                <li><a class="btn btn-primary" href="#like" onclick="showTab('like')">Top Songs</a></li>
+                <li><a class="btn btn-primary" href="#add-to-playlist" onclick="showTab('add-to-playlist')">Wait list</a></li>
             </ul>
 
-            <div class="icon float-right" style="margin-top: 45px;"></div>
+            <div class="icon float-right"></div>
             
 
         </nav>

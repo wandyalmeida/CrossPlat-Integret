@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<karaokes>
+  <musics name="International">
+    <song>
+      <id>2545</id>
+      <title>Bohemian Rhapsody</title>
+      <artist>Queen</artist>
+      <image>https://pbs.twimg.com/profile_images/1080450214807298048/QUetVW1e_400x400.jpg</image>
+      <genre>Rock</genre>
+    </song>
+    <song>
+      <id>19362</id>
+      <title>Hello</title>
+      <artist>Adele</artist>
+      <image>https://m.media-amazon.com/images/M/MV5BMTM2NzE1YTEtNTNjZC00MTg5LTkwOTEtNDEwMDI1ODA1YjhkXkEyXkFqcGdeQXVyNjU0ODAyOTY@._V1_.jpg</image>      
+      <genre>Pop</genre>
+    </song>
+    <song>
+      <id>20091</id>
+      <title>All I Ask</title>
+      <artist>Adele</artist>
+      <image>https://thestorybehind2017.files.wordpress.com/2017/02/1026ccdf868a60877968999a14aab654.jpg</image>      
+      <genre>Pop</genre>
+    </song>
+    <song>
+      <id>20253</id>
+      <title>Cold Shoulder</title>
+      <artist>Adele</artist>
+      <image>https://pics.filmaffinity.com/Adele_Cold_Shoulder_V_deo_musical-304940900-large.jpg</image>      
+      <genre>Pop</genre>
+    </song>
+    <song>
+      <id>20436</id>
+      <title>Easy On Me</title>
+      <artist>Adele</artist>
+      <image>https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/print-adele-easy-on-me-ar23-ayushita-rohiman-febriani.jpg</image>      
+      <genre>Pop</genre>
+    </song>
+    <song>
+      <id>2569</id>
+      <title>Rolling In The Deep</title>
+      <artist>Adele</artist>
+      <image>https://i.scdn.co/image/ab67616d0000b273aaabd35dde0cfc0bcf315d3e</image>      
+      <genre>Pop</genre>
+    </song>
+    <song>
+      <id>2627</id>
+      <title>Set Fire To The Rain</title>
+      <artist>Adele</artist>
+      <image>https://i1.sndcdn.com/artworks-OsgBGaD5lR4pHLCb-skAyQg-t500x500.jpg</image>      
+      <genre>Pop</genre>
+    </song>
+    <song>
+      <id>19068</id>
+      <title>Skyfall</title>
+      <artist>Adele</artist>
+      <image>https://i1.sndcdn.com/artworks-000087923334-x7q4ss-t500x500.jpg</image>      
+      <genre>Pop</genre>
+    </song>
+    <song>
+      <id>2600</id>
+      <title>Someone Like You</title>
+      <artist>Adele</artist>
+      <image>data:image/jpeg;base64,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</image>      
+      <genre>Pop</genre>
+    </song>
+    <song>
+      <id>2550</id>
+      <title>Help!</title>
+      <artist>The Beatles</artist>
+      <image>https://i1.sndcdn.com/artworks-Bs16uAKzCRrz8LC0-oP9r1Q-t500x500.jpg</image>
+      <genre>Rock</genre>
+    </song>
+    <song>
+      <id>2548</id>
+      <title>Beat it</title>
+      <artist>Michael Jackson</artist>
+      <image>https://i1.sndcdn.com/artworks-000329038545-d554xk-t500x500.jpg</image>
+      <genre>Pop</genre>
+    </song>
+    <song>
+      <id>2535</id>
+      <title>Sweet Dreams</title>
+      <artist>Beyoncé</artist>
+      <image>https://m.media-amazon.com/images/M/MV5BZjZmM2Q1Y2EtNWNlZi00Mjk2LWI5ZDktMzBhOTAxYjE4YTVkXkEyXkFqcGdeQXVyNjE0ODc0MDc@._V1_.jpg</image>
+      <genre>Pop</genre>
+    </song>
+    <song>
+      <id>2473</id>
+      <title>I want in that way</title>
+      <artist>Backstreet Boys</artist>
+      <image>https://i.scdn.co/image/ab67616d0000b2732d46afec3dab9a723f7d70a5</image>
+      <genre>Pop</genre>
+    </song>
+    <song>
+      <id>2549</id>
+      <title>Piece of me</title>
+      <artist>Britney Spears</artist>
+      <image>https://i1.sndcdn.com/artworks-6S154wEYrNbvnPIW-yHCI7Q-t500x500.jpg</image>
+      <genre>Pop</genre>
+    </song>
+    <song>
+      <id>2189</id>
+      <title>Last Friday Night</title>
+      <artist>Katy Perry</artist>
+      <image>https://m.media-amazon.com/images/M/MV5BYzQ3YjkzNWItZDUxZi00OGNjLTlkOWQtNWY3Y2JhMmRlMWEzXkEyXkFqcGdeQXVyNzg4MTIxNzg@._V1_.jpg</image>
+      <genre>Pop</genre>
+    </song>
+    <song>
+      <id>2552</id>
+      <title>Under The Infuence</title>
+      <artist>Chris Brown</artist>
+      <image>https://i1.sndcdn.com/artworks-r1XTWXD0DXgbWvhL-3L9Skw-t500x500.png</image>
+      <genre>Soul</genre>
+    </song>
+    <song>
+      <id>2553</id>
+      <title>Peru</title>
+      <artist>Fireboy DML</artist>
+      <image>https://i.scdn.co/image/ab67616d0000b2731c4c28299e3b188a72d07ed8</image>
+      <genre>Pop</genre>
+    </song>
+  </musics>
+  <musics name="Brazilian">
+    <song>
+      <id>3755</id>
+      <title>Linda Juventude</title>
+      <artist>14 Bis</artist>
+      <image>img/Ta_ke.png</image>
+      <genre>MPB</genre>
+    </song>
+    <song>
+      <id>6074</id>
+      <title>Planeta Sonho</title>
+      <artist>14 Bis</artist>
+      <image>img/Ta_ke.png</image>
+      <genre>MPB</genre>
+    </song>
+    <song>
+      <id>6197</id>
+      <title>Todo Azul Do Mar</title>
+      <artist>14 Bis</artist>
+      <image>img/Ta_ke.png</image>
+      <genre>MPB</genre>
+    </song>
+  </musics>
+ </karaokes>
