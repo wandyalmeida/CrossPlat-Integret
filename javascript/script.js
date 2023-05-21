@@ -57,9 +57,6 @@ document.getElementById("navMenu").addEventListener("click", function() {
 
 
   function addToWaitingList(id, title, artist, userName) {
-    db.transaction(function(tx){
-      tx.executeSql('CREATE TABLE waitList(ID_song INTEGER, title TEXT, artist TEXT, userName TEXT)');
-    });
     db.transaction(function (tx) {
       tx.executeSql(
         'SELECT * FROM waitList WHERE ID_song = ? And userName = ?',
@@ -153,7 +150,7 @@ function showAlbum(lists) {
         var album = songs[i].getElementsByTagName("artist")[0].childNodes[0].nodeValue;
         if (album === lists) {
           albumSongs.push(songs[i]);
-          console.log(albumSongs);
+          // console.log(albumSongs);
         }
       }
       if (albumSongs.length === 0) {
@@ -187,14 +184,14 @@ function showAlbum(lists) {
       }
     }
   };
-  xhttp.open("GET", "/xml/karaoke.xml", true);
+  xhttp.open("GET", "xml/karaoke.xml", true);
   xhttp.send();
 }
 
   
 function showSongs(lists) {
   resetSongList();
-  console.log(lists);
+  // console.log(lists);
 
   document.getElementById("playlist").style.display = "none";
 	document.getElementById("songList").style.display = "flex";
@@ -232,13 +229,13 @@ function showSongs(lists) {
         h1.className = "coming-soon";
         h1.innerHTML = "No matching songs found.";
         list.appendChild(h1);
-        console.log("No matching songs found in the XML file.");
+        // console.log("No matching songs found in the XML file.");
         return;
       }
       
       var list = document.getElementById("songList");
       
-      // Exibir cada música em uma linha da tabela
+      // Display each song in a table row
       for (var i = 0; i < internationalSongs.length; i++) {
         var title = internationalSongs[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
         var id = internationalSongs[i].getElementsByTagName("id")[0].childNodes[0].nodeValue;
@@ -259,7 +256,7 @@ function showSongs(lists) {
       }
     }
   };
-  xhttp.open("GET", "/xml/karaoke.xml", true);
+  xhttp.open("GET", "xml/karaoke.xml", true);
   xhttp.send();
 }
 
@@ -304,8 +301,8 @@ function searchSongs(searchId, searchBand, searchName) {
                 var id = song.getElementsByTagName("id")[0].textContent;
                 var artist = song.getElementsByTagName("artist")[0].textContent;
                 var title = song.getElementsByTagName("title")[0].textContent;
-
-                if (id == searchId || artist == searchBand || title == searchName) {
+                // remove case sensitive and signs
+                if (id.toLowerCase().replace(/'/g, "") == searchId.toLowerCase().replace(/'/g, "") || artist.toLowerCase().replace(/'/g, "") == searchBand.toLowerCase().replace(/'/g, "") || title.toLowerCase().replace(/'/g, "") == searchName.toLowerCase().replace(/'/g, "")) {
                     matchingSongs.push(song);
                 }
             }
@@ -316,7 +313,7 @@ function searchSongs(searchId, searchBand, searchName) {
                 h1.className = "coming-soon";
                 h1.innerHTML = "No matching songs found.";
                 list.appendChild(h1);
-                console.log("No matching songs found in the XML file.");
+                // console.log("No matching songs found in the XML file.");
                 return;
             }
 
@@ -342,7 +339,7 @@ function searchSongs(searchId, searchBand, searchName) {
             }
         }
     };
-    xhttp.open("GET", "/xml/karaoke.xml", true);
+    xhttp.open("GET", "xml/karaoke.xml", true);
     xhttp.send();
 }
 
@@ -365,9 +362,20 @@ function showUserNameInput(button, id, title, artist) {
   addButton.style.borderRadius = '10px';
   addButton.style.color = 'white';
   addButton.style.margin = '5px';
-  addButton.addEventListener("click", function() { 
-      addToWaitingList(id, title, artist, userNameInput.value);
-      var alertHTML = '<div class="alert alert-dark "style="margin: 0 0 0 10px" role="alert"><strong>Music added!</strong></div>';
+  addButton.addEventListener("click", function() {
+    // Check if the input is in blank not add the song 
+    if (userNameInput.value.trim() === "") {
+      var alertHTML = '<div class="alert alert-dark "style="margin: 0 0 0 10px" role="alert"><strong>Please add your name!</strong></div>';
+      addButton.insertAdjacentHTML('afterend', alertHTML);
+      var alertElement = addButton.nextElementSibling;
+      setTimeout(function() {
+        alertElement.remove();
+        songInfoDiv.appendChild(originalButton);
+      }, 3000);
+      return;
+    }
+    addToWaitingList(id, title, artist, userNameInput.value);
+    var alertHTML = '<div class="alert alert-dark "style="margin: 0 0 0 10px" role="alert"><strong>Music added!</strong></div>';
     addButton.insertAdjacentHTML('afterend', alertHTML);
     userNameInput.value = "";
     var alertElement = addButton.nextElementSibling;
@@ -402,33 +410,31 @@ function deleteAll() {
 }
 
 function loadWaitingListFromDatabase() {
-  console.log("Função loadWaitingListFromDatabase chamada");
+ 
   db.transaction(function(tx) {
     tx.executeSql('SELECT * FROM waitList', [], function(tx, results) {
       var len = results.rows.length;
-      console.log("Número de músicas na lists de espera:", len);
       
-      // Adicionar esta verificação
+      
       if (len === 0) {
-        // Se a lists de espera estiver vazia, mostrar a mensagem "lists vazia" e ocultar a lists de espera
+        // If the waiting list is empty, show the message "empty lists" and hide the waiting lists
         var emptyMessage = document.getElementById("emptyMessage");
         emptyMessage.style.display = "block";
-        console.log("Mostrando mensagem 'lists vazia'");
+        
         var listDiv = document.getElementById("list");
         listDiv.style.display = "none";
-        console.log("Ocultando lists de espera");
+        
       } else {
-        // Se a lists de espera não estiver vazia, ocultar a mensagem "lists vazia" e mostrar a lists de espera
+        // If the waiting list is not empty, hide the "empty lists" message and show the waiting lists
         var emptyMessage = document.getElementById("emptyMessage");
         emptyMessage.style.display = "none";
-        console.log("Ocultando mensagem 'lists vazia'");
         var listDiv = document.getElementById("list");
         listDiv.style.display = "block";
   
         var table = document.getElementById("waitingList");
         table.innerHTML = "";
 
-        // Recriar a linha de cabeçalho
+        // Recreate the header row
         var headerRow = document.createElement("tr");
         var headers = ["ID", "Title", "Artist", "UserName", ""];
         for (var i = 0; i < headers.length; i++) {
@@ -451,22 +457,19 @@ function loadWaitingListFromDatabase() {
       
       for (var i = 0; i < len; i++) {
         var row = results.rows.item(i);
-        // console.log("Adicionando música à lists de espera:", row.ID, row.title, row.artist, row.userName);
-        console.log('Dados recuperados da tabela waitList:', row.ID_song, row.title, row.artist, row.userName);
         
-        // Verifique se a música já está na lists de espera
+        // Check if the song is already on the queue list
         var waitingList = getWaitingListFromPage();
         var songAlreadyInList = waitingList.some(function(song) {
           return song.id == row.ID_song && song.userName == row.userName;
         });
         
         if (songAlreadyInList) {
-          // A música já está na lists de espera, então não precisamos adicioná-la novamente
+          // The song is already on the queue list, so we don't need to add it again
           continue;
         }
      
-        
-        // Criar uma nova linha de tabela com o título, artista e botão "Remover" da música
+        // Create a new table row with the song's title, artist and "Remove" button
         var tr = document.createElement("tr");
         tr.setAttribute("data-id", row.ID_song);
         tr.setAttribute("data-userName", row.userName);
@@ -503,13 +506,13 @@ function loadWaitingListFromDatabase() {
         removeCell.appendChild(removeButton);
         tr.appendChild(removeCell);
 
-        // Adicionar a linha de tabela à tabela
+        // Add the table row to the table
         var table = document.getElementById("waitingList");
         table.appendChild(tr);
         }
         });
         });
         }
-     
-// Chamar a função loadWaitingListFromDatabase quando a página for carregada
+
+// Call the load WaitingList From Database function when the page is loaded
 window.addEventListener("load", loadWaitingListFromDatabase);

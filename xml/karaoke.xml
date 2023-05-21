@@ -65,7 +65,7 @@
       <genre>Pop</genre>
     </song>
     <song>
-      <id>2550</id>
+      <id>4518</id>
       <title>Help!</title>
       <artist>The Beatles</artist>
       <image>https://i1.sndcdn.com/artworks-Bs16uAKzCRrz8LC0-oP9r1Q-t500x500.jpg</image>
@@ -120,27 +120,97 @@
       <image>https://i.scdn.co/image/ab67616d0000b2731c4c28299e3b188a72d07ed8</image>
       <genre>Pop</genre>
     </song>
+    <song>
+      <id>19696</id>
+      <title>For Those About To Rock (We Salute You)</title>
+      <artist>AC-DC</artist>
+      <image>https://progrography.com/wp-content/uploads/2018/07/forthoseabouttorock7.jpg</image>
+      <genre>Rock</genre>
+    </song>
+    <song>
+      <id>20370</id>
+      <title>You Shook Me All Night Long</title>
+      <artist>AC-DC</artist>
+      <image>https://m.media-amazon.com/images/M/MV5BYjUxNWNkMWEtZjkzNi00YjgzLTg0MmQtMjE1YzAyMmU0NjlmXkEyXkFqcGdeQXVyNDE4OTY5NzI@._V1_.jpg</image>
+      <genre>Rock</genre>
+    </song>
+    <song>
+      <id>4678</id>
+      <title>Amazing</title>
+      <artist>Aerosmith</artist>
+      <image>https://images.991.com/large_image/Aerosmith+Amazing-23654.jpg</image>
+      <genre>Rock</genre>
+    </song>
+    <song>
+      <id>4879</id>
+      <title>Crazy</title>
+      <artist>Aerosmith</artist>
+      <image>https://upload.wikimedia.org/wikipedia/en/5/58/Aerosmith-Crazy.jpg</image>
+      <genre>Rock</genre>
+    </song>
+    <song>
+      <id>19165</id>
+      <title>Cryin'</title>
+      <artist>Aerosmith</artist>
+      <image>https://m.media-amazon.com/images/M/MV5BZmIzYTE1YjYtZGUzMC00ZWY4LWE0ZjQtMmQxMjkzMzUxOGNkXkEyXkFqcGdeQXVyNDE4OTY5NzI@._V1_.jpg</image>
+      <genre>Rock</genre>
+    </song>
+    <song>
+      <id>19172</id>
+      <title>Dream on</title>
+      <artist>Aerosmith</artist>
+      <image>https://lastfm.freetls.fastly.net/i/u/ar0/57d1a850630344b29535545725daf245.jpg</image>
+      <genre>Rock</genre>
+    </song>
+    <song>
+      <id>20225</id>
+      <title>Hole In My Soul</title>
+      <artist>Aerosmith</artist>
+      <image>https://m.media-amazon.com/images/M/MV5BMDI4NzVkNjUtMGQ2Mi00YzUzLTk1MzktY2Q5MmMxMTAyODBjXkEyXkFqcGdeQXVyNTk1NTMyNzM@._V1_FMjpg_UX1000_.jpg</image>
+      <genre>Rock</genre>
+    </song>
+    <song>
+      <id>4909</id>
+      <title>I Don't Want To Miss A Thing</title>
+      <artist>Aerosmith</artist>
+      <image>https://static.stereogum.com/uploads/2022/06/Aerosmith-I-Dont-Want-To-Miss-A-Thing-1654808981.jpg</image>
+      <genre>Rock</genre>
+    </song>
+    <song>
+      <id>19505</id>
+      <title>Janie's Got A Gun</title>
+      <artist>Aerosmith</artist>
+      <image>https://upload.wikimedia.org/wikipedia/en/e/e0/JaniesGotaGun.jpg</image>
+      <genre>Rock</genre>
+    </song>
+    <song>
+      <id>19876</id>
+      <title>Livin On The Edge</title>
+      <artist>Aerosmith</artist>
+      <image>https://m.media-amazon.com/images/I/61HElc2aymL._AC_SX355_.jpg</image>
+      <genre>Rock</genre>
+    </song>
   </musics>
   <musics name="Brazilian">
     <song>
       <id>3755</id>
       <title>Linda Juventude</title>
       <artist>14 Bis</artist>
-      <image>img/Ta_ke.png</image>
+      <image>https://i.ytimg.com/vi/xUU0SlC7Om0/hqdefault.jpg</image>
       <genre>MPB</genre>
     </song>
     <song>
       <id>6074</id>
       <title>Planeta Sonho</title>
       <artist>14 Bis</artist>
-      <image>img/Ta_ke.png</image>
+      <image>https://i.scdn.co/image/ab67616d0000b2735a03a8e942fe156571dc8fae</image>
       <genre>MPB</genre>
     </song>
     <song>
       <id>6197</id>
       <title>Todo Azul Do Mar</title>
       <artist>14 Bis</artist>
-      <image>img/Ta_ke.png</image>
+      <image>https://i.ytimg.com/vi/iGsyimPlO50/maxresdefault.jpg</image>
       <genre>MPB</genre>
     </song>
   </musics>
