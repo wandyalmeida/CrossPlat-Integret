@@ -12,9 +12,9 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.3.0-alpha3",
-    "electron": "^24.3.1",
-    "electron-builder": "^24.4.0",
-    "electron-packager": "^17.1.1",
-    "uuid": "^9.0.0"
+    "electron": "^5.0.13",
+    "electron-builder": "^5.0.3",
+    "electron-packager": "^5.2.0",
+    "uuid": "^3.3.2"
   }
 }

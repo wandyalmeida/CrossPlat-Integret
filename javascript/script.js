@@ -4,6 +4,7 @@ db.transaction(function(tx){
   tx.executeSql('CREATE TABLE waitList(ID_song INTEGER, title TEXT, artist TEXT, userName TEXT)');
 });
 
+// dark mode
 const body = document.querySelector('.body');
 const icon = document.querySelector('.icon');
 
@@ -11,7 +12,7 @@ icon.addEventListener('click', () => {
     body.classList.toggle('dark');
 });
 
-// JavaScript
+// menu option
 document.getElementById("navMenu").addEventListener("click", function() {
     // Toggle active class on menu icon
     this.classList.toggle("active");
@@ -27,7 +28,6 @@ document.getElementById("navMenu").addEventListener("click", function() {
   });
 
   // Show the playlist by selection
-
   function showTab(tabName){
     // hide all tabs
     var tabs = document.getElementsByClassName("myPlaylist");
@@ -55,7 +55,7 @@ document.getElementById("navMenu").addEventListener("click", function() {
     });
   });
 
-
+  // insert the song on the database
   function addToWaitingList(id, title, artist, userName) {
     db.transaction(function (tx) {
       tx.executeSql(
@@ -114,6 +114,7 @@ document.getElementById("navMenu").addEventListener("click", function() {
     
    }
    
+   // function to check and delete only the song that user want to delete if have 2 songs with the same id on the list.
    function deleteSongFromDatabase(id, userName) {
     db.transaction(function (tx) {
     tx.executeSql('DELETE FROM waitList WHERE ID_song = ? AND userName = ?', [id, userName], function(tx, results) {
@@ -122,7 +123,7 @@ document.getElementById("navMenu").addEventListener("click", function() {
     
    }
    
-   
+// function to not duplicate the list if the user click mutiplo times on the playlist
 function resetSongList() {
   isSongListLoaded = false;
   var list = document.getElementById("songList");
@@ -130,6 +131,8 @@ function resetSongList() {
     list.removeChild(list.firstChild);
   }
 }
+
+// Function to show the songs by the album like if i want to see all the songs that is from the beatles 
 function showAlbum(lists) {
   resetSongList();
   
@@ -188,10 +191,9 @@ function showAlbum(lists) {
   xhttp.send();
 }
 
-  
+// function to show songs if the user press on the lists like international sogs
 function showSongs(lists) {
   resetSongList();
-  // console.log(lists);
 
   document.getElementById("playlist").style.display = "none";
 	document.getElementById("songList").style.display = "flex";
@@ -279,6 +281,7 @@ form.addEventListener("submit", function (event) {
     searchSongs(searchQuery, searchQuery, searchQuery);
 });
 
+// Function to show the song that the user research on the search bar
 function searchSongs(searchId, searchBand, searchName) {
     resetSongList();
 
@@ -343,6 +346,8 @@ function searchSongs(searchId, searchBand, searchName) {
     xhttp.send();
 }
 
+// Get input from the users when the user want to add a song on the list
+
 function showUserNameInput(button, id, title, artist) {
   var songInfoDiv = button.parentNode;
   var userNameInput = songInfoDiv.querySelector("input");
@@ -399,6 +404,7 @@ function showUserNameInput(button, id, title, artist) {
 
 }
 
+//function to delete everything that is on the database
 function deleteAll() {
 
   db.transaction(function (tx) {
@@ -409,6 +415,7 @@ function deleteAll() {
 
 }
 
+// Get everything that is save on the database to display on the page in a table
 function loadWaitingListFromDatabase() {
  
   db.transaction(function(tx) {

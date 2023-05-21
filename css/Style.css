@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
- * {
-    box-sizing: border-box;
-}
-
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -431,7 +427,15 @@ a.contact-bottom {
     fill: #fff;
 }
 
-
+.body.dark .color{
+    color: #fff;
+}
+@media (max-width: 1300px) {
+    .bnt-new{
+        margin-left: 0;
+    }
+    
+}
 
     /*REESPONSIVE DESIGN : MOBILE*/
 @media only screen and (max-width: 767px) {
@@ -452,3 +456,5 @@ a.contact-bottom {
 
     }   
 }
+
+  

@@ -3,7 +3,24 @@
 var {app, BrowserWindow, Menu} = require('electron');
 var path = require('path');
 var mainWindow = null;
-const template = [
+const template =  process.platform === 'darwin' ?  [
+    {
+      label: 'Menu',
+      submenu: [
+        {
+          label: 'exit',
+          accelerator: 'Cmd+W',
+          click: () => { app.quit() }
+        },
+        { type: 'separator' },
+        {
+          label: 'reload',
+          accelerator: 'Cmd+R',
+          click: () => { mainWindow.webContents.reload() }
+        },
+      ],
+    },
+  ]:[
     {
       label: 'Menu',
       submenu: [
@@ -20,7 +37,7 @@ const template = [
         },
       ],
     },
-  ];
+  ]
   
   const menu = Menu.buildFromTemplate(template);
   Menu.setApplicationMenu(menu);
