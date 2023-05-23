@@ -6,7 +6,7 @@
 
 ##
 
-## Ta_Ke Description
+## ✔️ Ta_Ke Description
 <p>We have developed an exciting desktop application called Ta_Ke, designed specifically for karaoke enthusiasts. The primary goal of this app is to enhance the karaoke experience for users by providing a user-friendly interface to select their favorite songs.
 
 Ta_Ke caters to clients who already own a karaoke machine but lack a dedicated app for song selection. With our application, users can now enjoy a more engaging and entertaining karaoke experience.</p>
@@ -26,7 +26,7 @@ Ta_Ke caters to clients who already own a karaoke machine but lack a dedicated a
 
 ##
 
-## Key features of Ta_Ke include:
+## ✔️ Key features of Ta_Ke include:
 
  <ul>
   <li>User-Friendly Search Bar: Our app incorporates a search bar that allows users to easily find their desired songs. Whether it's an international hit, a Brazilian classic, or a popular Spanish track, Ta_Ke has an extensive library to cater to diverse musical preferences.</li>
@@ -41,7 +41,7 @@ Please feel free to reach out if you have any further questions or require addit
 
 ##
 
-## Developers
+## 💻Developers
 
 ##
 
