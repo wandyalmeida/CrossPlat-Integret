@@ -41,6 +41,12 @@ Please feel free to reach out if you have any further questions or require addit
 
 ##
 
+## Ta_Ke App
+
+![Ta_Ke 2023-05-23 13-14-02](https://github.com/wandyalmeida/CrossPlat-Integret/assets/77290358/3347ba88-a3df-410e-88c7-e22de02fa517)
+
+##
+
 ## 💻Developers
 
 ##
