@@ -35,15 +35,17 @@ Ta_Ke caters to clients who already own a karaoke machine but lack a dedicated a
   <li>Song Library: Our app boasts a vast song library, covering a wide range of genres and languages. From international chart-toppers to beloved Brazilian melodies and captivating Spanish tunes, Ta_Ke ensures that users have access to an extensive repertoire of songs to choose from.</li>
  </ul>
  
+ ## 
+ 
+ ## Ta_Ke App
+
+![Ta_Ke 2023-05-23 13-14-02](https://github.com/wandyalmeida/CrossPlat-Integret/assets/77290358/3347ba88-a3df-410e-88c7-e22de02fa517)
+
+##
+ 
  <p>Ta_Ke aims to revolutionize the karaoke experience by offering a comprehensive desktop application with an intuitive search function, appealing dark mode, playlist organization, and a diverse song collection. We are committed to providing endless fun and entertainment to karaoke enthusiasts worldwide.
 
 Please feel free to reach out if you have any further questions or require additional information.</p>
-
-##
-
-## Ta_Ke App
-
-![Ta_Ke 2023-05-23 13-14-02](https://github.com/wandyalmeida/CrossPlat-Integret/assets/77290358/3347ba88-a3df-410e-88c7-e22de02fa517)
 
 ##
 
