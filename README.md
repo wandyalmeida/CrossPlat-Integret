@@ -4,6 +4,8 @@
   <img src="https://github.com/wandyalmeida/CrossPlat-Integret/assets/77290358/3f478b50-3c2f-40c6-8bf1-2f92618fdbbe" alt="Ta_Ke.img">
 </div>
 
+![Badge under Development](http://img.shields.io/static/v1?label=STATUS&message=UNDER%20DEVELOPMENT&color=GREEN&style=for-the-badge)
+
 ##
 
 ## ✔️ Ta_Ke Description
